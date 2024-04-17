@@ -1,0 +1,252 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo p {
+    font-size: 1.2em;
+    color: #4caf50;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+.cart button {
+    background-color: #ffd700;
+    color: #333;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cart button:hover {
+    background-color: #ffc107;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-image: url('https://t4.ftcdn.net/jpg/01/75/31/11/360_F_175311148_3wJX6Gw499HT4MzYwcAjsNZVgX4F2qCw.jpg');
+    background-size: cover;
+    background-position: center;
+    color: black; 
+    text-align: center;
+    height: 100vh; 
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: white;
+}
+
+.hero-content button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hero-content button:hover {
+    background-color: #45a049;
+}
+
+.categories-section {
+    padding: 40px 20px;
+    background-color: #e0f7fa; 
+    margin-bottom: 20px; 
+}
+
+.categories-section h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.category {
+    flex-basis: 45%;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
+}
+
+.category img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.category h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.category button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.category button:hover {
+    background-color: #45a049;
+}
+
+.reviews-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f3e5f5; 
+    margin-bottom: 20px; 
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.review {
+    flex-basis: 48%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff; 
+}
+
+.review p {
+    font-size: 1.2em; 
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.review span {
+    font-size: 0.9em;
+    color: #777;
+}
+.contact-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f5f5f5; 
+    margin-bottom: 20px; 
+}
+
+.contact-section h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2em; 
+    margin-bottom: 20px;
+}
+
+.contact-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-section li {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categories {
+        flex-direction: column;
+        align-items: center;
+    }
+    .reviews {
+        flex-direction: column;
+        align-items: center;
+    }
+}
